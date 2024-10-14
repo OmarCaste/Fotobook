@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Contenedor principal -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Barra superior -->
+        <div class="bg-gray-800 text-white flex justify-between items-center p-4">
+            <div class="flex items-center space-x-4">
+                <!-- Logo -->
+                <div class="text-2xl font-bold">Logo</div>
+            </div>
+            <!-- Barra de búsqueda -->
+            <div class="flex-grow mx-4">
+                <input type="text" placeholder="Búsqueda" class="w-full px-4 py-2 rounded bg-gray-700 text-white">
+            </div>
+            <!-- Perfil -->
+            <div class="flex items-center space-x-2">
+                <span>Perfil</span>
+                <div class="w-8 h-8 rounded-full bg-gray-600"></div>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="flex flex-grow">
+            <!-- Barra lateral -->
+            <div class="w-1/5 bg-gray-700 text-white p-4">
+                <ul class="space-y-4">
+                    <li><a href="#" class="block">Menu</a></li>
+                    <li><a href="#" class="block">Fotógrafos</a></li>
+                    <li><a href="#" class="block">Clientes</a></li>
+                    <li><a href="#" class="block">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección principal -->
+            <div class="flex-grow bg-white p-8">
+                <h1 class="text-2xl font-bold mb-4">Clientes</h1>
+                <!-- Tabla de clientes -->
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-300">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border">Columna 1</th>
+                                <th class="px-4 py-2 border">Columna 2</th>
+                                <th class="px-4 py-2 border">Columna 3</th>
+                                <th class="px-4 py-2 border">Columna 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border">Dato 1</td>
+                                <td class="px-4 py-2 border">Dato 2</td>
+                                <td class="px-4 py-2 border">Dato 3</td>
+                                <td class="px-4 py-2 border">Dato 4</td>
+                            </tr>
+                            <!-- Añadir más filas según sea necesario -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
